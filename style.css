@@ -1,77 +1,148 @@
-/* Base styles */
+/* ===== Base Styles ===== */
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding-bottom: 60px; /* prevent footer overlap */
+    line-height: 1.7;
+    background-color: #f4f6f9;
+    color: #222;
+    padding-bottom: 70px; /* prevent footer overlap */
 }
 
-/* Header */
+/* ===== Header ===== */
 header {
-    background: #004080;
-    color: #fff;
-    padding: 20px 0;
+    background: linear-gradient(135deg, #003366, #004080);
+    color: #ffffff;
+    padding: 25px 15px;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 8px 0;
+    font-size: 1.05em;
 }
 
 header nav {
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 header nav a {
-    color: #fff;
-    margin: 0 15px;
+    color: #ffffff;
+    margin: 0 12px;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 header nav a:hover {
-    text-decoration: underline;
     color: #ffcc00;
+    text-decoration: underline;
 }
 
-/* Sections */
+/* ===== Profile Links (Scholar, GitHub, LinkedIn) ===== */
+.profile-links {
+    margin-top: 10px;
+}
+
+.profile-links a {
+    color: #ffcc00;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-links a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* ===== Sections ===== */
 section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    font-size: 1.1em;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Footer */
+section h2 {
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #004080;
+}
+
+section h3 {
+    margin-top: 20px;
+    color: #003366;
+}
+
+/* ===== Lists ===== */
+ul {
+    padding-left: 22px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Publications */
+.publications {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.publications li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* ===== Links ===== */
+a {
+    color: #004080;
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+/* ===== Contact Section ===== */
+#contact a {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #004080;
-    color: #fff;
+    padding: 12px;
+    background: #003366;
+    color: #ffffff;
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 0.9em;
 }
 
-/* Contact section link styling */
-#contact a {
-    color: #004080;
-    text-decoration: underline;
-}
-
-/* Responsive adjustments */
+/* ===== Responsive Design ===== */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     header nav a {
         display: block;
-        margin: 10px 0;
+        margin: 8px 0;
     }
 
     section {
-        margin: 10px 5px;
-        padding: 15px;
+        margin: 15px 8px;
+        padding: 18px;
     }
 }
