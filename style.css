@@ -1,148 +1,170 @@
 /* ===== Base Styles ===== */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
-    background-color: #f4f6f9;
-    color: #222;
-    padding-bottom: 70px; /* prevent footer overlap */
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  background-color: #f4f6f9;
+  color: #222;
+  padding-bottom: 70px; /* prevent footer overlap */
 }
 
 /* ===== Header ===== */
 header {
-    background: linear-gradient(135deg, #003366, #004080);
-    color: #ffffff;
-    padding: 25px 15px;
-    text-align: center;
+  background: linear-gradient(135deg, #003366, #004080);
+  color: #ffffff;
+  padding: 25px 15px;
+  text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.2em;
-    letter-spacing: 1px;
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 1px;
 }
 
 header p {
-    margin: 8px 0;
-    font-size: 1.05em;
+  margin: 8px 0;
+  font-size: 1.05em;
 }
 
 header nav {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 header nav a {
-    color: #ffffff;
-    margin: 0 12px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+  color: #ffffff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 header nav a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
+  color: #ffcc00;
+  text-decoration: underline;
 }
 
 /* ===== Profile Links (Scholar, GitHub, LinkedIn) ===== */
 .profile-links {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .profile-links a {
-    color: #ffcc00;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
+  color: #ffcc00;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .profile-links a:hover {
-    text-decoration: underline;
-    color: #ffffff;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* ===== ORCID Badge ===== */
+.orcid {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #a6ce39;
+  color: #003300;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.orcid svg {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+.orcid:hover {
+  background: #8fc52b;
+  color: #002200;
 }
 
 /* ===== Sections ===== */
 section {
-    max-width: 900px;
-    margin: 25px auto;
-    padding: 25px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 section h2 {
-    border-bottom: 2px solid #004080;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    color: #004080;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #004080;
 }
 
 section h3 {
-    margin-top: 20px;
-    color: #003366;
+  margin-top: 20px;
+  color: #003366;
 }
 
 /* ===== Lists ===== */
 ul {
-    padding-left: 22px;
+  padding-left: 22px;
 }
 
 ul li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /* Publications */
 .publications {
-    list-style-type: square;
-    padding-left: 20px;
+  list-style-type: square;
+  padding-left: 20px;
 }
 
 .publications li {
-    margin-bottom: 15px;
-    line-height: 1.6;
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
 /* ===== Links ===== */
 a {
-    color: #004080;
+  color: #004080;
 }
 
 a:hover {
-    color: #ff6600;
+  color: #ff6600;
 }
 
 /* ===== Contact Section ===== */
 #contact a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* ===== Footer ===== */
 footer {
-    text-align: center;
-    padding: 12px;
-    background: #003366;
-    color: #ffffff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.9em;
+  text-align: center;
+  padding: 12px;
+  background: #003366;
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 0.9em;
 }
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.6em;
-    }
+  header h1 {
+    font-size: 1.6em;
+  }
 
-    header nav a {
-        display: block;
-        margin: 8px 0;
-    }
+  header nav a {
+    display: block;
+    margin: 8px 0;
+  }
 
-    section {
-        margin: 15px 8px;
-        padding: 18px;
-    }
+  section {
+    margin: 15px 8px;
+    padding: 18px;
+  }
 }
