@@ -50,28 +50,7 @@ header nav a:hover {
   margin-top: 10px;
 }
 
-.profile-links a {
-  color: #ffcc00;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
 
-.profile-links a:hover {
-  text-decoration: underline;
-  color: #ffffff;
-}
-
-/* ===== ORCID Badge ===== */
-.orcid {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #a6ce39;
-  color: #003300;
-  padding: 6px 10px;
-  border-radius: 6px;
-  text-decoration: none;
   font-weight: bold;
 }
 .orcid svg {
