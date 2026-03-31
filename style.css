@@ -50,17 +50,16 @@ header nav a:hover {
   margin-top: 10px;
 }
 
-
+.profile-links a {
+  color: #ffcc00;
+  margin: 0 10px;
+  text-decoration: none;
   font-weight: bold;
 }
-.orcid svg {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-}
-.orcid:hover {
-  background: #8fc52b;
-  color: #002200;
+
+.profile-links a:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 /* ===== Sections ===== */
